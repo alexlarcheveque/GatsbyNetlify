@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Link } from "gatsby";
 import Header from "../components/header";
+import Layout from "../components/layout";
 
 // styles
 const pageStyles = {
@@ -106,16 +107,12 @@ const links = [
 ]
 
 // markup
-const IndexPage = () => {
+export default function IndexPage() {
     return (
-        <main style={pageStyles}>
+        <Layout>
             <title>Home Page</title>
-            <Link to="/about/">About Me</Link>
-            <Link to="/contact/">Contact Us</Link>
-            <Header headerText={"Hello world!"} idk AAl/>
+            <Header headerText={"MAIN PAGE"}/>
             <p> What a world, eh?! </p>
-        </main>
+        </Layout>
     )
 }
-
-export default IndexPage
