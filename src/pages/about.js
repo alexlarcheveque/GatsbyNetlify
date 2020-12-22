@@ -1,5 +1,7 @@
 import * as React from "react"
 import Header from "../components/header";
+import logo from "../images/icon.png"
+import Layout from "../components/layout";
 
 // styles
 const pageStyles = {
@@ -60,14 +62,13 @@ const docLink = {
 }
 
 // markup
-const AboutPage = () => {
+export default function AboutPage() {
     return (
-        <main style={pageStyles}>
+        <Layout>
             <title> About </title>
             <Header headerText={"About Gatsby"}/>
+            <img src={logo} alt={"Gatsby Logo"}/>
             <p> Wow, forgot how powerful React is! </p>
-        </main>
+        </Layout>
     )
 }
-
-export default AboutPage

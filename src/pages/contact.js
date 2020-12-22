@@ -1,17 +1,16 @@
 import React from "react"
 import { Link } from "gatsby";
 import Header from "../components/header"
+import Layout from "../components/layout";
 
 // markup
-const ContactPage = () => {
+export default function ContactPage() {
     return (
-        <main>
+        <Layout>
             <title> Contact Us </title>
             <Link to="/">Home</Link>
             <Header headerText={"Contact Us"}/>
             <p> Contact Us Please! </p>
-        </main>
+        </Layout>
     )
 }
-
-export default ContactPage;
